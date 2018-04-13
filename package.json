@@ -1,10 +1,10 @@
 {
-    "name": "dambreaker-nodemailer",
-    "version": "1.0.0",
+    "name": "damless-nodemailer",
+    "version": "0.0.1",
     "description": "Nodemailer service for damless.",
     "main": "index.js",
     "dependencies": {
-        "dambreaker": "latest",
+        "damless": "latest",
         "oups": "latest",
         "nodemailer": "latest",
         "nodemailer-html-to-text": "latest"
@@ -14,14 +14,14 @@
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/BenoitClaveau/dambreaker-nodemailer.git"
+        "url": "https://github.com/BenoitClaveau/damless-nodemailer.git"
     },
     "keywords": [
         "nodemailer",
         "mailer",
         "email",
         "e-mail",
-        "dambreaker"
+        "damless"
     ],
     "author": {
         "name": "Benoît Claveau",
@@ -29,7 +29,7 @@
     },
     "license": "MIT",
     "bugs": {
-        "url": "https://github.com/BenoitClaveau/dambreaker-nodemailer/issues"
+        "url": "https://github.com/BenoitClaveau/damless-nodemailer/issues"
     },
-    "homepage": "https://github.com/BenoitClaveau/dambreaker-nodemailer"
+    "homepage": "https://github.com/BenoitClaveau/damless-nodemailer"
 }

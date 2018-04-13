@@ -1,4 +1,4 @@
-# dambreaker-nodemailer
+# damless-nodemailer
 Use [nodemailer](https://www.npmjs.com/package/nodemailer) to send email from your [Qwebs server](https://www.npmjs.com/package/qwebs).
 
 ## Features
@@ -34,7 +34,7 @@ Use [nodemailer](https://www.npmjs.com/package/nodemailer) to send email from yo
 const Qwebs = require("qwebs");
 const qwebs = new Qwebs();
 
-qwebs.inject("$mailer", "dambreaker-nodemailer");
+qwebs.inject("$mailer", "damless-nodemailer");
 ```
 
 ## API
@@ -56,5 +56,5 @@ return $mailer.send(mailOptions);
 ## Installation
 
 ```bash
-$ npm install dambreaker-nodemailer
+$ npm install damless-nodemailer
 ```
