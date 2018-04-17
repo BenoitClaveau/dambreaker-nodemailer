@@ -1,11 +1,10 @@
 # damless-nodemailer
-Use [nodemailer](https://www.npmjs.com/package/nodemailer) to send email from your [Qwebs server](https://www.npmjs.com/package/qwebs).
+Use [nodemailer](https://www.npmjs.com/package/nodemailer) to send email from your [Dam Less server](https://www.npmjs.com/package/damless).
 
 ## Features
 
-  * [Qwebs](https://www.npmjs.com/package/qwebs)
+  * [DamLess](https://www.npmjs.com/package/damless)
   * [Nodemailer](https://www.npmjs.com/package/nodemailer)
-  * [Promise](https://www.npmjs.com/package/q)
   
 ### Add the nodemailer parameters in config.json
 
@@ -28,13 +27,13 @@ Use [nodemailer](https://www.npmjs.com/package/nodemailer) to send email from yo
 }
 ```
 
-### Declare and inject $mailer
+### Declare and inject nodemailer service
 
 ```js
-const Qwebs = require("qwebs");
-const qwebs = new Qwebs();
+const DamLess = require("damless");
+const damless = new DamLess();
 
-qwebs.inject("$mailer", "damless-nodemailer");
+damless.inject("mailer", "damless-nodemailer");
 ```
 
 ## API
@@ -42,7 +41,7 @@ qwebs.inject("$mailer", "damless-nodemailer");
   * send(mailerOptions)
   
 ```js
-let mailOptions = {
+const mailOptions = {
     from: 'Fred Foo ✔ <foo@blurdybloop.com>', // sender address 
     to: 'bar@blurdybloop.com, baz@blurdybloop.com', // list of receivers 
     subject: 'Hello ✔', // Subject line 
@@ -50,7 +49,7 @@ let mailOptions = {
     html: '<b>Hello world ✔</b>' // html body 
 };
 
-return $mailer.send(mailOptions);
+return mailer.send(mailOptions);
 ```
 
 ## Installation
